@@ -1,7 +1,8 @@
+/* eslint-disable multiline-comment-style */
 "use strict";
 
 let showAll = true;
-let showMen = false;
+let show = "men";
 let inputstream;
 let jsonFile;
 //suggestion : get json file from website ?
@@ -11,7 +12,7 @@ readJsonFile();
 
 document.querySelectorAll("a").forEach(link => {
     link.onclick = function () {
-        showMen = link.id === "men";
+        show = link.id;
         showAll = link.id === "all"
         reset();
     }
@@ -38,7 +39,7 @@ function checkTables() {
 //fill table with people depending on flags (showMen, showAll, showWomen)
 function fillTable() {
     for (const person of jsonFile) {
-        if (showMen && person.geslacht === "man" || !showMen && person.geslacht === "vrouw" || showAll) {
+        if (person.geslacht === show || showAll) {
             build(person);
         }
     }
@@ -63,7 +64,7 @@ function newCell(row) {
     return row.insertCell();
 }
 
-//adendum, added these after everything worked and when checking trough code.
+//adendum, added these after everything worked and when checking through code.
 //helper methods to keep readability high
 function newCellWithText(row, text) {
     newCell(row).innerText = text;
@@ -80,7 +81,7 @@ function picture(imgpath, alt) {
     return img;
 }
 
-//clear tale and refill entries
+//clear table and refill entries
 function reset() {
     clearTable();
     checkTables();
@@ -93,3 +94,18 @@ function clearTable() {
         tableBody.lastChild.remove();
     }
 }
+
+/*
+ * completely unnecesairy, but the table twitching on refresh and link click was ticking me off.
+ * this prevent me from having to edit the default css I was given
+ */
+function addStyle(styleString) {
+    const style = document.createElement("style");
+    style.textContent = styleString;
+    document.head.append(style);
+}
+
+addStyle(`th,td{
+    min-height: 48px;
+    min-width: 48px;
+}`);
