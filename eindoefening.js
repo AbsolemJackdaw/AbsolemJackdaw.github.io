@@ -67,9 +67,9 @@ function newCell(row) {
 }
 
 //helper method
-function picture(alt) {
+function picture(imgpath, alt) {
     const img = document.createElement("img");
-    img.src = path;
+    img.src = imgpath;
     img.alt = alt;
     return img;
 }
