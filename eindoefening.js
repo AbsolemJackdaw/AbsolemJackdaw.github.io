@@ -57,8 +57,8 @@ function build(person) {
     const tableRow = table.insertRow();
     newCell(tableRow).innerText = person.voornaam;
     newCell(tableRow).innerText = person.familienaam;
-    newCell(tableRow).appendChild(picture(`image/${person.geslacht}.png`, person.geslacht));
-    newCell(tableRow).appendChild(picture(`image/${person.foto}`, person.foto));
+    newCell(tableRow).appendChild(picture(`./image/${person.geslacht}.png`, person.geslacht));
+    newCell(tableRow).appendChild(picture(`./image/${person.foto}`, person.foto));
 }
 
 //helper method
