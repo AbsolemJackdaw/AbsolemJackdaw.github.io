@@ -9,20 +9,13 @@ const path = "json/geslachten.json";
 
 readJsonFile();
 
-document.getElementById("men").onclick = function () {
-    showAll = false;
-    showMen = true;
-    reset();
-};
-document.getElementById("women").onclick = function () {
-    showAll = false;
-    showMen = false;
-    reset();
-};
-document.getElementById("all").onclick = function () {
-    showAll = true;
-    reset();
-};
+document.querySelectorAll("a").forEach(link => {
+    link.onclick = function () {
+        showMen = link.id === "men";
+        showAll = link.id === "all"
+        reset();
+    }
+});
 
 //readJsonFile is called once, when the website is started up / refreshed / called. 
 //no need to recall this when refreshing the table (pick choice men, women, all)
@@ -52,18 +45,31 @@ function fillTable() {
 }
 
 //fill one row of the table with a person read from json
+//'dot slash' for img path is a fix for running on a site, so the img path gets looked at in the root.
+//tested on git pages and VSC live server
 function build(person) {
     const table = document.querySelector("tbody");
     const tableRow = table.insertRow();
-    newCell(tableRow).innerText = person.voornaam;
-    newCell(tableRow).innerText = person.familienaam;
-    newCell(tableRow).appendChild(picture(`./image/${person.geslacht}.png`, person.geslacht));
-    newCell(tableRow).appendChild(picture(`./image/${person.foto}`, person.foto));
+    newCellWithText(tableRow, person.voornaam);
+    newCellWithText(tableRow, person.familienaam);
+    newCellWithImg(tableRow, `${person.geslacht}.png`, person.geslacht);
+    newCellWithImg(tableRow, `${person.foto}`, person.voornaam);
 }
 
 //helper method
+//after note: this is pointless. it saves no lines of code.
+//keeping it just in case
 function newCell(row) {
     return row.insertCell();
+}
+
+//adendum, added these after everything worked and when checking trough code.
+//helper methods to keep readability high
+function newCellWithText(row, text) {
+    newCell(row).innerText = text;
+}
+function newCellWithImg(row, imgpath, flavortext) {
+    newCell(row).appendChild(picture(`./image/${imgpath}`, flavortext));
 }
 
 //helper method
