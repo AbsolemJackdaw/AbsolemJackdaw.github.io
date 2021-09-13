@@ -22,20 +22,21 @@ document.querySelectorAll("a").forEach(link => {
 //no need to recall this when refreshing the table (pick choice men, women, all)
 async function readJsonFile() {
     inputstream = await fetch(path);
-    jsonFile = await inputstream.json();
-    //comment this out if you want to start with a blank table
-    checkTables(path);
-}
-
-//seperate to check tables for reset functionality
-function checkTables() {
-    if (inputstream.ok && jsonFile.length > 0) {
-        fillTable();
+    if (inputstream.ok) {
+        jsonFile = await inputstream.json();
+        if (jsonFile.length > 0) {
+            fillTable();//comment this out if you want to start with a blank table
+        } else {
+            console.log(`${path} didnt have any values`);
+            showError(true)
+        }
     } else {
         console.log(`${path} presented errors and couldn't be read`);
+        showError(true);
     }
 }
 
+//seperate from readJsonFile for reset functionality
 //fill table with people depending on flags (showMen, showAll, showWomen)
 function fillTable() {
     for (const person of jsonFile) {
@@ -83,8 +84,9 @@ function picture(imgpath, alt) {
 
 //clear table and refill entries
 function reset() {
+    showError(false);
     clearTable();
-    checkTables();
+    fillTable();
 }
 
 //clears all children in the tbody
@@ -95,17 +97,26 @@ function clearTable() {
     }
 }
 
+function showError(flag) {
+    const foutDiv = document.getElementById("fout");
+    foutDiv.hidden = !flag;
+}
+
 /*
  * completely unnecesairy, but the table twitching on refresh and link click was ticking me off.
  * this prevent me from having to edit the default css I was given
  */
-function addStyle(styleString) {
+function addStyle(stylebody) {
     const style = document.createElement("style");
-    style.textContent = styleString;
+    style.textContent = stylebody;
     document.head.append(style);
 }
 
 addStyle(`th,td{
     min-height: 48px;
     min-width: 48px;
+}`);
+//the red bar extending all the way out ticked me off too
+addStyle(`#fout{
+    max-width: fit-content;
 }`);
