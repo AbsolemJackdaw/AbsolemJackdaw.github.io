@@ -6,6 +6,7 @@ let jsonFile;
 
 //read out json file to fill dropdown menu
 readJsonFile();
+loadFromSessionBasket();
 
 //click button event to add given entries to table
 document.getElementById("toevoegen").onclick = function () {
@@ -15,6 +16,7 @@ document.getElementById("toevoegen").onclick = function () {
     const aantal = checkAndLogCount();
     if (groenten && aantal) {
         addToTable();
+        saveBasketToSession();
     }
 }
 
@@ -87,7 +89,7 @@ function addToTable() {
         //modify row if entry already exists
         for (const row of table.children) {
             if (row.firstChild.innerText === getSelected().dataset.naam) {
-                row.children[1].innerText = getRowCount(row) + parseInt(getCount(), 10);
+                row.children[1].innerText = getRowCount(row) + parseFloat(getCount(), 10);
                 //new price after setting new count
                 const newPrice = getRowCount(row) * getSelected().dataset.prijs;
                 row.children[3].innerText = newPrice.toFixed(2);
@@ -103,6 +105,7 @@ function addToTable() {
 
     //only to go from hidden to visible here.
     checkTableVisibility();
+    calcAndSetTotal();
 }
 
 //add new row to given table
@@ -111,7 +114,8 @@ function addNewRow(table) {
     createCell(tableRow, getSelected().dataset.naam);
     createCell(tableRow, getCount());
     createCell(tableRow, getSelected().dataset.prijs);
-    createCell(tableRow, getSelected().dataset.prijs * getCount());
+    const price = getSelected().dataset.prijs * getCount();
+    createCell(tableRow, price.toFixed(2));
     createBinCell(tableRow);
 }
 
@@ -130,6 +134,8 @@ function createBinCell(row) {
         table.removeChild(row);
         //remove if last entry was deleted
         checkTableVisibility();
+        saveBasketToSession();
+        calcAndSetTotal();
     };
 }
 
@@ -144,4 +150,61 @@ function picture(imgpath, alt) {
 //toggles visibility if table (hidden if empty, else visible)
 function checkTableVisibility() {
     document.getElementById("winkelmand").hidden = !document.querySelector("tbody").children.length > 0;
+}
+
+function calcAndSetTotal() {
+    const foot = document.querySelector("tfoot tr");
+    const table = document.querySelector("tbody");
+    let total = 0;
+    for (const row of table.children) {
+        total += parseFloat(row.children[3].innerText);
+    }
+    foot.children[1].innerText = total.toFixed(2);
+}
+
+
+///////////////////////////////////////////////////bonus, save to local storage ! ///////////////////////////////////////////////////////////
+function saveBasketToSession() {
+    let index = 0;
+    const table = document.querySelector("tbody");
+    //clear session storage so we can catch up to removed entries
+    localStorage.clear();
+    localStorage.setItem("rows", table.children.length);
+    for (const row of table.children) {
+        const array = [];
+        array.push(row.children[0].innerText);
+        array.push(row.children[1].innerText);
+        array.push(row.children[2].innerText);
+        localStorage.setItem(index, JSON.stringify(array))
+
+        index++;
+    }
+}
+
+function loadFromSessionBasket() {
+    const rows = localStorage.getItem("rows");
+    if (rows !== null && rows > 0) {
+        for (let index = 0; index < rows; index++) {
+            const array = JSON.parse(localStorage.getItem(index));
+            addEntry(
+                array[0],
+                array[1],
+                array[2]
+            );
+        }
+        calcAndSetTotal();
+        checkTableVisibility();
+
+    }
+}
+
+function addEntry(naam, aantal, prijs) {
+    const table = document.querySelector("tbody");
+    const tableRow = table.insertRow();
+    createCell(tableRow, naam);
+    createCell(tableRow, aantal);
+    createCell(tableRow, prijs);
+    const price = parseFloat(aantal, 10) * parseFloat(prijs, 10);
+    createCell(tableRow, price.toFixed(2));
+    createBinCell(tableRow);
 }
