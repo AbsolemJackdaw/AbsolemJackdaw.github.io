@@ -42,15 +42,16 @@ footer {
 }
 
 .cards{
-   /* background-color: thistle;*/
+   /*background-color: thistle;*/
 }
 
 .card{
-   background-color: yellowgreen;
+   background-color: black;
     display: inline-table;
     margin: 20px;
     width: 160px;
     height: 210px;
+
 }
 
 .cardimg{
@@ -67,5 +68,11 @@ footer {
     background-color: black;   
     margin: 0px;
     padding: 0px;
-    display: block;
+
+    font-family: monospace;
+    font-size: 1rem;
+}
+
+.card a{
+   text-decoration: none;
 }
