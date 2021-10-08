@@ -63,10 +63,10 @@ main p{
 .card{
    background-color: black;
     display: inline-table;
-    margin: 20px;
-    width: 160px;
-    height: 200px;
-    border-radius: 10px;
+    margin: 1.25rem;
+    width: 10rem;
+    height: 12.5rem;
+    border-radius: 0.625rem;
 }
 
 .card:hover{
@@ -79,7 +79,7 @@ main p{
     height: width;
     margin: 0px;
     padding: 0px;
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 
@@ -91,7 +91,7 @@ main p{
     padding-bottom: 5px;
     font-family: monospace;
     font-size: 1rem;
-    border-radius: 10px;
+    border-radius: 0.625rem;
 
 }
 
