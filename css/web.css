@@ -11,6 +11,9 @@ header {
 
 main {
     text-align: left;
+    width: 60%;
+    margin-left: 20%; /*70 mid , 15 left, 15 right = 100%*/
+    font-size: 1.25rem;
 }
 
 footer {
