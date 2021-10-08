@@ -10,11 +10,16 @@ header {
 }
 
 main {
-    text-align: center;
+    text-align: left;
 }
 
 footer {
     text-align: center;
+}
+
+main p{
+    margin-top: 0px;
+    margin-bottom: 5px;
 }
 
 .button {
@@ -50,8 +55,8 @@ footer {
     display: inline-table;
     margin: 20px;
     width: 160px;
-    height: 210px;
-
+    height: 200px;
+    border-radius: 10px;
 }
 
 .cardimg{
@@ -60,7 +65,7 @@ footer {
     height: width;
     margin: 0px;
     padding: 0px;
-
+    border-radius: 10px;
 }
 
 .card-title{
@@ -68,9 +73,12 @@ footer {
     background-color: black;   
     margin: 0px;
     padding: 0px;
+    padding-bottom: 5px;
 
     font-family: monospace;
     font-size: 1rem;
+    border-radius: 10px;
+
 }
 
 .card a{
