@@ -87,7 +87,9 @@ main p{
     height: width;
     margin: 0px;
     padding: 0px;
-    border-radius: 0.625rem;
+    border-top-left-radius: 0.625rem;
+    border-top-right-radius: 0.625rem;
+
 }
 
 
