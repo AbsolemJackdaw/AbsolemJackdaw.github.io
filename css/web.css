@@ -1,12 +1,41 @@
+body{
+    background-color: #063a40;
+    color: white;
+    font-family: serif;
+}
+
 header {
-    background-color: beige;
-    align-self: center;
+   text-align: center;
 }
 
 main {
-    background-color: blueviolet;
+    text-align: center;
 }
 
 footer {
-    background: burlywood;
+    text-align: center;
+}
+
+.button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.25em;
+    margin: 4px 2px;
+    border-radius: 12px;
+}
+  
+.button.current{
+    background-color: teal;
+
+}
+.button:hover{
+    background-color: rgb(95, 165, 165);
+}
+.button:active{
+    background-color: rgb(58, 97, 97);
 }
