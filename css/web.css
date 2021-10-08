@@ -1,7 +1,8 @@
 body{
-    background-color: #063a40;
+    background-color: #32343a;
     color: white;
     font-family: serif;
+    
 }
 
 header {
@@ -30,7 +31,7 @@ footer {
 }
   
 .button.current{
-    background-color: teal;
+    background-color: rgb(33, 85, 105);
 
 }
 .button:hover{
@@ -38,4 +39,33 @@ footer {
 }
 .button:active{
     background-color: rgb(58, 97, 97);
+}
+
+.cards{
+   /* background-color: thistle;*/
+}
+
+.card{
+   background-color: yellowgreen;
+    display: inline-table;
+    margin: 20px;
+    width: 160px;
+    height: 210px;
+}
+
+.cardimg{
+    background-color: rgb(21, 16, 27);
+    width: 100%;
+    height: width;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.card-title{
+    color: white;
+    background-color: black;   
+    margin: 0px;
+    padding: 0px;
+    display: block;
 }
