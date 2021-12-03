@@ -6,10 +6,15 @@
   user-zoom: fixed;
 }
 
-body{
+body.dark{
     background-color: #32343a;
     color: white;
     font-family: serif;
+}
+body.light{
+  background-color: #c4c4c4;
+  color: rgb(12, 12, 12);
+  font-family: serif;
 }
 
 header {
@@ -30,6 +35,16 @@ main.centered_main{
     font-size: 1.25rem;
 }
 
+p{
+padding-bottom: 12px;
+}
+
+p a.dark{
+  color:white
+}
+p a.light{
+  color:rgb(10, 10, 10)
+}
 
 footer {
     text-align: center;
@@ -68,9 +83,9 @@ main p{
     background-color: rgb(58, 97, 97);
 }
 
-.cardWrapper{
-   /*background-color: thistle;*/
-}
+/*.cardWrapper{
+   background-color: thistle;
+}*/
 
 .card{
    background-color: black;
@@ -86,15 +101,16 @@ main p{
 }
 
 .cardimg{
-    background-color: rgb(21, 16, 27);
     width: 100%;
     height: width;
     margin: 0px;
     padding: 0px;
     border-top-left-radius: 0.625rem;
     border-top-right-radius: 0.625rem;
+    background-color: rgb(21, 16, 27);
 
 }
+
 
 
 .card-title{
