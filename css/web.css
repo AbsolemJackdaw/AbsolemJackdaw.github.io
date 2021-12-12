@@ -28,6 +28,13 @@ main {
     font-size: 1.25rem;
 }
 
+main.a5 {
+  text-align: left;
+  width: 30%;
+  margin-left: 35%; /*70 mid , 15 left, 15 right = 100%*/
+  font-size: 1.25rem;
+}
+
 main.centered_main{
     text-align: center;
     width: 80%;
