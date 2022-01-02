@@ -1,16 +1,12 @@
-@viewport {
-  width: device-width;
-  zoom: 0.45;
-  min-zoom: 0.4;
-  max-zoom: 2;
-  user-zoom: fixed;
-}
+
+
 
 body.dark{
     background-color: #32343a;
     color: white;
     font-family: serif;
 }
+
 body.light{
   background-color: #c4c4c4;
   color: rgb(12, 12, 12);
@@ -26,6 +22,13 @@ main {
     width: 60%;
     margin-left: 20%; /*70 mid , 15 left, 15 right = 100%*/
     font-size: 1.25rem;
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    width: 90%;
+    margin-left: 5%; /*70 mid , 15 left, 15 right = 100%*/
+  }
 }
 
 main.a5 {
