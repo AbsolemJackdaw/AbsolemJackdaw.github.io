@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/web.css">
     <title>Subaraki's Mods</title>
     <script src="js/script.js" defer></script>
+    <script src="js/cardLoader.js" defer></script>
+    <script src="js/modcards.js" defer></script>
+
 
 </head>
 
@@ -21,123 +24,10 @@
 
     </header>
     <main class="centered_main">
-
-        <div class="cardWrapper">
-
-            <section class="card">
-                <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/left-hanging">
-                    <img class="cardimg" src="https://media.forgecdn.net/avatars/439/243/637686175161498287.png"
-                        alt="left hanging">
-                    <h5 class="card-title">Left Hanging (Forge & Fabric)</h5>
-                </a>
-            </section>
-
-            <section class="card">
-                <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/bad-to-the-bone">
-                    <img class="cardimg" src="https://media.forgecdn.net/avatars/442/577/637694606253533433.png"
-                        alt="bad to the bone">
-                    <h5 class="card-title">Bad to the Bone (Forge)</h5>
-                </a>
-            </section>
-
-            <section class="card">
-                <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/bad-to-the-bone-fabric">
-                    <img class="cardimg" src="https://media.forgecdn.net/avatars/442/577/637694606253533433.png"
-                        alt="bad to the bone">
-                    <h5 class="card-title">Bad to the Bone (Fabric)</h5>
-                </a>
-            </section>
-
-            <section class="card">
-                <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/paintings">
-                    <img class="cardimg" src="https://media.forgecdn.net/avatars/421/635/637649644741913892.png"
-                        alt="paintings++">
-                    <h5 class="card-title">Paintings++ (Forge & Fabric)</h5>
-                </a>
-            </section>
-
-            <section class="card">
-                <a target="_blank"
-                    href="https://www.curseforge.com/minecraft/texture-packs/oliver-remund-painting-pack">
-                    <img class="cardimg" src="https://media.forgecdn.net/avatars/233/366/637071699625150013.png"
-                        alt="paintings++ fabric">
-                    <h5 class="card-title">Oliver Remund Painting Pack</h5>
-                </a>
-            </section>
-
-            <section class="card">
-                <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/just-fashion">
-                    <img class="cardimg" src="https://media.forgecdn.net/avatars/62/237/636142093247498816.png"
-                        alt="just fashion">
-                    <h5 class="card-title">Just Fashion</h5>
-                </a>
-            </section>
-
-            <section class="card">
-                <a target="_blank" href="https://www.curseforge.com/minecraft/texture-packs/justfashion-resource-pack">
-                    <img class="cardimg" src="https://media.forgecdn.net/avatars/62/238/636142104192070619.png"
-                        alt="just fashion">
-                    <h5 class="card-title">Just Fashion ResourcePack</h5>
-                </a>
-            </section>
-
-            <section class="card">
-                <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/pet-buddy-mod">
-                    <img class="cardimg" src="https://media.forgecdn.net/avatars/51/860/636108925219162679.png"
-                        alt="pet buddy">
-                    <h5 class="card-title">Pet Buddy</h5>
-                </a>
-            </section>
-
-            <section class="card">
-                <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/telepad">
-                    <img class="cardimg" src="https://media.forgecdn.net/avatars/26/909/635800716905691885.png"
-                        alt="telepads">
-                    <h5 class="card-title">Telepads</h5>
-                </a>
-            </section>
-
-            <section class="card">
-                <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/public-gui-announcement">
-                    <img class="cardimg" src="https://media.forgecdn.net/avatars/225/791/637041666564369251.png"
-                        alt="public gui announcement">
-                    <h5 class="card-title">Public Gui Announcement (Forge & Fabric) </h5>
-                </a>
-            </section>
-
-            <section class="card">
-                <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/fat-chicken">
-                    <img class="cardimg" src="https://media.forgecdn.net/avatars/470/603/637757785851900686.png"
-                        alt="fat chicken">
-                    <h5 class="card-title">Fat Chicken (Christmas Mod)</h5>
-                </a>
-            </section>
-
-            <section class="card">
-                <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/snow-mod">
-                    <img class="cardimg" src="https://media.forgecdn.net/avatars/470/558/637757687418136059.png"
-                        alt="fat chicken">
-                    <h5 class="card-title">Snow Mod</h5>
-                </a>
-            </section>
-
-
-            <section class="card">
-                <a target="_blank" href="https://www.curseforge.com/members/absolemjackdaw/projects">
-                    <img class="cardimg" src="/assets/curseforge.png" alt="CurseForge logo">
-                    <h5 class="card-title">Alt Mods...</h5>
-                </a>
-            </section>
-
-
-        </div>
-
+        <div id="cardWrapper"></div>
     </main>
-    <footer>
-        <label class="switch">
-            <input type="checkbox">
-            <span class="slider round"></span>
-        </label>
+    <footer id="footer" class="centeredtext">
+
         <p>Open Source. Code at <a href="https://github.com/ArtixAllMighty/ArtixAllMighty.github.io">github
                 repository</a></p>
     </footer>

@@ -1,5 +1,23 @@
 "use strict"
 
+//eslint-disable-next-line max-params
+function makeToggle() {
+    const label = document.createElement("label")
+    label.className = "switch"
+    const input = document.createElement("input")
+    input.type = "checkbox"
+    const span = document.createElement("span")
+    span.className = "slider round"
+
+
+    label.appendChild(input)
+    label.appendChild(span)
+
+    document.getElementById("footer").appendChild(label)
+}
+
+makeToggle()
+
 const toggle = document.querySelectorAll("input");
 const theme = sessionStorage.getItem("theme")
 
@@ -35,5 +53,4 @@ toggle[0].onclick = function () {
         sessionStorage.setItem("theme", "dark")
     }
 }
-
 
