@@ -1,3 +1,4 @@
+"use strict"
 
 create(
     "https://www.curseforge.com/minecraft/mc-mods/left-hanging",
@@ -12,12 +13,7 @@ create(
     "bad to the bone",
     "Bad to the Bone (Forge)"
 )
-create(
-    "https://www.curseforge.com/minecraft/mc-mods/bad-to-the-bone-fabric",
-    "https://media.forgecdn.net/avatars/442/577/637694606253533433.png",
-    "bad to the bone",
-    "Bad to the Bone (Fabric)"
-)
+
 create(
     "https://www.curseforge.com/minecraft/mc-mods/paintings",
     "https://media.forgecdn.net/avatars/421/635/637649644741913892.png",
@@ -79,6 +75,24 @@ create(
     "snow mod",
     "Snow Mod"
 )
+
+create(
+    "https://www.curseforge.com/minecraft/mc-mods/fixmyspawnr",
+    "https://media.forgecdn.net/avatars/550/818/637887628260580574.png",
+    "fixmyspawnr",
+    "FixMySpawnR"
+)
+
+create(
+    "https://www.curseforge.com/minecraft/mc-mods/easierchests-2",
+    "https://media.forgecdn.net/avatars/549/316/637886339109260920.png",
+    "easier chests",
+    "Easier Chests"
+
+)
+
+
+
 
 create(
     "https://www.curseforge.com/members/absolemjackdaw/projects",
