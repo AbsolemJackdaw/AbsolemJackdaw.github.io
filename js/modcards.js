@@ -91,6 +91,13 @@ create(
 
 )
 
+create(
+    "https://www.curseforge.com/minecraft/mc-mods/easiervillagertrading-2",
+    "https://media.forgecdn.net/avatars/552/764/637892529114433833.png",
+    "easier villager trading",
+    "Easier Villager Trading"
+)
+
 
 
 
