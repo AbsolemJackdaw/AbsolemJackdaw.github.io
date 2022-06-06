@@ -98,7 +98,12 @@ create(
     "Easier Villager Trading"
 )
 
-
+create(
+    "https://www.curseforge.com/minecraft/mc-mods/apple-crates",
+    "https://media.forgecdn.net/avatars/555/777/637899763544438321.png",
+    "apple crates",
+    "Apple Crates"
+)
 
 
 create(
