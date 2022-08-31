@@ -1,11 +1,41 @@
 "use strict"
 
 create(
-    "https://www.curseforge.com/minecraft/mc-mods/left-hanging",
-    "https://media.forgecdn.net/avatars/439/243/637686175161498287.png",
-    "left hanging",
-    "Left Hanging (Forge & Fabric)"
+    "https://www.curseforge.com/minecraft/mc-mods/paintings",
+    "https://media.forgecdn.net/avatars/421/635/637649644741913892.png",
+    "paintings++",
+    "Paintings++"
 )
+
+create(
+    "https://www.curseforge.com/minecraft/texture-packs/oliver-remund-painting-pack",
+    "https://media.forgecdn.net/avatars/233/366/637071699625150013.png",
+    "paintings++ pack",
+    "Oliver Remund Painting Pack"
+)
+
+
+create(
+    "https://www.curseforge.com/minecraft/mc-mods/apple-crates",
+    "https://media.forgecdn.net/avatars/555/777/637899763544438321.png",
+    "apple crates",
+    "Apple Crates"
+)
+
+create(
+    "https://www.curseforge.com/minecraft/mc-mods/public-gui-announcement",
+    "https://media.forgecdn.net/avatars/225/791/637041666564369251.png",
+    "public gui announcement",
+    "Public Gui Announcement"
+)
+
+create(
+    "https://www.curseforge.com/minecraft/mc-mods/cow-simulator",
+    "https://media.forgecdn.net/avatars/597/692/637974877597301967.png",
+    "public gui announcement",
+    "Public Gui Announcement"
+)
+
 
 create(
     "https://www.curseforge.com/minecraft/mc-mods/bad-to-the-bone",
@@ -14,17 +44,12 @@ create(
     "Bad to the Bone (Forge)"
 )
 
+
 create(
-    "https://www.curseforge.com/minecraft/mc-mods/paintings",
-    "https://media.forgecdn.net/avatars/421/635/637649644741913892.png",
-    "paintings++",
-    "Paintings++"
-)
-create(
-    "https://www.curseforge.com/minecraft/texture-packs/oliver-remund-painting-pack",
-    "https://media.forgecdn.net/avatars/233/366/637071699625150013.png",
-    "paintings++ pack",
-    "Oliver Remund Painting Pack"
+    "https://www.curseforge.com/minecraft/mc-mods/left-hanging",
+    "https://media.forgecdn.net/avatars/439/243/637686175161498287.png",
+    "left hanging",
+    "Left Hanging (Forge & Fabric)"
 )
 
 create(
@@ -53,13 +78,6 @@ create(
     "https://media.forgecdn.net/avatars/26/909/635800716905691885.png",
     "telepads",
     "Telepads"
-)
-
-create(
-    "https://www.curseforge.com/minecraft/mc-mods/public-gui-announcement",
-    "https://media.forgecdn.net/avatars/225/791/637041666564369251.png",
-    "public gui announcement",
-    "Public Gui Announcement"
 )
 
 create(
@@ -96,13 +114,6 @@ create(
     "https://media.forgecdn.net/avatars/552/764/637892529114433833.png",
     "easier villager trading",
     "Easier Villager Trading"
-)
-
-create(
-    "https://www.curseforge.com/minecraft/mc-mods/apple-crates",
-    "https://media.forgecdn.net/avatars/555/777/637899763544438321.png",
-    "apple crates",
-    "Apple Crates"
 )
 
 
