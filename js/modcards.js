@@ -31,9 +31,9 @@ create(
 
 create(
     "https://www.curseforge.com/minecraft/mc-mods/cow-simulator",
-    "https://media.forgecdn.net/avatars/597/692/637974877597301967.png",
-    "public gui announcement",
-    "Public Gui Announcement"
+    "https://media.forgecdn.net/avatars/598/530/637976698825363487.png",
+    "cow simulator",
+    "Cow Simulator"
 )
 
 
@@ -63,7 +63,7 @@ create(
     "https://www.curseforge.com/minecraft/texture-packs/justfashion-resource-pack",
     "https://media.forgecdn.net/avatars/62/238/636142104192070619.png",
     "just fashion pack",
-    "Just Fashion ResourcePack"
+    "Suits Fashion"
 )
 
 create(
