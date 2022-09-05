@@ -17,7 +17,7 @@ create(
 
 create(
     "https://www.curseforge.com/minecraft/mc-mods/apple-crates",
-    "https://media.forgecdn.net/avatars/555/777/637899763544438321.png",
+    "https://media.forgecdn.net/avatars/601/218/637980033049309572.png",
     "apple crates",
     "Apple Crates"
 )
@@ -60,9 +60,9 @@ create(
 )
 
 create(
-    "https://www.curseforge.com/minecraft/texture-packs/justfashion-resource-pack",
-    "https://media.forgecdn.net/avatars/62/238/636142104192070619.png",
-    "just fashion pack",
+    "https://www.curseforge.com/minecraft/mc-mods/suits-fashion",
+    "https://media.forgecdn.net/avatars/600/720/637979076496023269.png",
+    "just fashion addon",
     "Suits Fashion"
 )
 
