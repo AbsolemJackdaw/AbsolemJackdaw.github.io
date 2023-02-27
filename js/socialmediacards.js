@@ -8,7 +8,7 @@ create(
 )
 
 create(
-    "https://github.com/ArtixAllMighty",
+    "https://github.com/AbsolemJackdaw",
     "/assets/github_dark.png",
     "Github logo",
     "Github - ArtixAllmighty"
