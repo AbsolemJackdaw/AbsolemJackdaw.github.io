@@ -10,7 +10,7 @@
   ],
   "name": "absolem jackdaw's mod collection",
   "short_name": "ajmc",
-  "start_url": "/",
+  "start_url": "/index.html",
   "display": "standalone",
   "description": "quick links to mods",
   "lang": "english",
