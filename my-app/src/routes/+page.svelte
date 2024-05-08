@@ -11,9 +11,11 @@
             <Card {card}/>
         {/each}
     </div>
+    <p class="my-10 border-b ">Absolem Jackdaw</p>
     <p>
         Programmer<br/>
         Artist<br/>
         Biker<br/>
     </p>
+
 </div>
