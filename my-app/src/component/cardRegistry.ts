@@ -161,5 +161,11 @@ export function mediaCardRegistry(): ICard[] {
         "CurseForge logo",
         "CurseForge - AbsolemJackdaw"
     ));
+    cards.push({
+        link: "https://www.deviantart.com/absolemjackdaw",
+        image: "/deviantart.png",
+        altTxt: "deviantart logo",
+        text: "Deviant Art - AbsolemJackdaw"
+    })
     return cards;
 }

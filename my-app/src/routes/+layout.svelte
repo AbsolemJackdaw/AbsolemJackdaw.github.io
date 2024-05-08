@@ -1,7 +1,16 @@
-<script>
-    import "../app.css";
-
+<script lang="ts">
     export const prerender = true;
+    import "../app.css";
+    import {page} from '$app/stores';
+
+    const root = "/"
+    const mods = "/mods"
+    const software = "/software"
+
+    $:url = $page.url.pathname
+
+    $: isSelected = url;
+
 </script>
 <style>
     .backgroundImg {
@@ -18,14 +27,16 @@
     }
 </style>
 
-<body class="h-screen w-screen backgroundImg dark:text-slate-300 text-slate-900">
+<body class="h-screen scroll backgroundImg dark:text-slate-300 text-slate-900">
 <div class="foregroundImg">
-    <nav class="bg-cyan-950 p-4 rounded shadow center items-center justify-center flex">
-        <div class="rounded-2xl border-2 px-5 py-5 bg-blue-950 border-blue-500">
-            <a href="/"
-               class="shadow border-2 border-cyan-600 rounded-md bg-cyan-900 hover:bg-cyan-800 p-1 font-bold mr-5 text-2xl justify-center items-center">Home</a>
-            <a href="/mods"
-               class="shadow border-2 border-cyan-600 rounded-md bg-cyan-900 hover:bg-cyan-800 p-1 font-bold text-2xl justify-center items-center">Mods</a>
+    <nav class="bg-gradient-to-b from-indigo-500 from-20% via-purple-500 via-80% to-pink-400 flex items-center justify-center p-6 mx-auto text-green-300 capitalize text-2xl">
+        <div class="">
+            <a href={root} on:click={() => isSelected = root}
+               class="hover:border-b-4 border-amber-200 mx-1.5 sm:mx-3 {isSelected === root ? 'border-b-4':''}">Home</a>
+            <a href={mods} on:click={() => isSelected = mods}
+               class="hover:border-b-4 border-amber-200 mx-1.5 sm:mx-3 {isSelected === mods ? 'border-b-4':''}">Mods</a>
+            <a href={software} on:click={() => isSelected = software}
+               class="hover:border-b-4 border-amber-200 mx-1.5 sm:mx-3 {isSelected === software ? 'border-b-4':''}">Software</a>
         </div>
     </nav>
     <div class="flex flex-col items-center">
