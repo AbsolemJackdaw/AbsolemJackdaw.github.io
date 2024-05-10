@@ -10,7 +10,9 @@ const config = {
         default: true,
     },
     trailingSlash: 'always',
-
+    paths: {
+        base: '/absolemjackdaw.github.io'
+    },
     adapter: adapter({
         // default options are shown. On some platforms
         // these options are set automatically — see below
