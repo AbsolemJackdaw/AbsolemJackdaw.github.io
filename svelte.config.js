@@ -6,6 +6,10 @@ const config = {
     // Consult https://kit.svelte.dev/docs/integrations#preprocessors
     // for more information about preprocessors
     preprocess: vitePreprocess(),
+    prerender: {
+        default: true,
+    },
+    trailingSlash: 'always',
 
     adapter: adapter({
         // default options are shown. On some platforms
