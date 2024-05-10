@@ -130,7 +130,7 @@ export function modCardRegistry(): ICard[] {
         "https://www.curseforge.com/members/absolemjackdaw/projects",
         "/curseforge.png",
         "CurseForge logo",
-        "Alt Mods..."
+        "More mods..."
     ));
     return cards;
 }
