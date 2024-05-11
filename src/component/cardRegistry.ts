@@ -138,34 +138,40 @@ export function modCardRegistry(): ICard[] {
 export function mediaCardRegistry(): ICard[] {
     const cards: ICard[] = [];
     cards.push(create(
-        "https://discord.gg/8MEdFZh",
-        "/discord.png",
-        "discord logo",
-        "Discord - AbsolemJackdaw #9307"
-    ));
-    cards.push(create(
         "https://github.com/AbsolemJackdaw",
         "/github_dark.png",
         "Github logo",
-        "Github - AbsolemJackdaw"
-    ));
-    cards.push(create(
-        "https://twitter.com/SubarakiS",
-        "/twitter.png",
-        "Twitter logo",
-        "Twitter - @SubarakiS"
+        "AbsolemJackdaw"
     ));
     cards.push(create(
         "https://www.curseforge.com/members/absolemjackdaw/projects",
         "/curseforge.png",
         "CurseForge logo",
-        "CurseForge - AbsolemJackdaw"
+        "AbsolemJackdaw"
+    ));
+    cards.push(create(
+        "https://discord.gg/8MEdFZh",
+        "/discord.png",
+        "discord logo",
+        "absolemjackdaw"
     ));
     cards.push({
         link: "https://www.deviantart.com/absolemjackdaw",
         image: "/deviantart.png",
         altTxt: "deviantart logo",
-        text: "Deviant Art - AbsolemJackdaw"
-    })
+        text: "AbsolemJackdaw"
+    });
+    cards.push(create(
+        "https://www.instagram.com/absolem.jackdaw/",
+        "/insta.png",
+        "Instagram Logo",
+        "absolem.jackdaw"
+    ));
+    cards.push(create(
+        "https://twitter.com/SubarakiS",
+        "/twitter.png",
+        "Twitter logo",
+        "@SubarakiS"
+    ));
     return cards;
 }
