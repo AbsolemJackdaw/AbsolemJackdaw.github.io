@@ -10,6 +10,7 @@
     const about = "/about"
 
 </script>
+
 <nav class="bg-gradient-to-b from-indigo-500 from-20% via-purple-500 via-80% to-pink-400 flex items-center justify-center p-6 mx-auto text-green-300 capitalize text-2xl">
     <div class="">
         <a href={root} on:click={() => isSelected = root}
