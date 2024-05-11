@@ -4,7 +4,7 @@
 
     const allCards = mediaCardRegistry();
 </script>
-<div class="h-screen flex flex-col items-center mt-5 text-4xl font-bold m-48">
+<div class="flex flex-col items-center mt-5 text-4xl font-bold m-48">
     <h1 class="mb-20">Welcome to the SubHaven</h1>
     <div class="flex flex-wrap text-center justify-center">
         {#each allCards as card}
