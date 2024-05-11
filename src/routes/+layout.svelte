@@ -20,7 +20,7 @@
 <body class="min-h-screen scroll backgroundImg dark:text-slate-300 text-slate-900">
 <div class="min-h-screen foregroundImg">
     <Navbar/>
-    <div class="flex flex-col items-center">
+    <div class="flex flex-col items-center pt-20">
         <slot/>
     </div>
 </div>
