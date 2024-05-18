@@ -125,7 +125,12 @@ export function modCardRegistry(): ICard[] {
         "easier villager trading",
         "Easier Villager Trading"
     ));
-
+    cards.push(create(
+        "https://www.curseforge.com/minecraft/mc-mods/bone-zone",
+        "https://media.forgecdn.net/avatars/623/829/638018410959397463.png",
+        "bone zone",
+        "Bone Zone"
+    ));
     cards.push(create(
         "https://www.curseforge.com/members/absolemjackdaw/projects",
         "/curseforge.png",
