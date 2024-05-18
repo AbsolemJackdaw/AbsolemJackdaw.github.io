@@ -5,9 +5,9 @@
 <style>
     .backgroundImg {
         background-image: url("/bg.svg");
+        background-repeat: repeat-x;
         background-position: bottom;
         background-attachment: fixed;
-        background-size: contain;
     }
 
     .foregroundImg {
@@ -17,7 +17,7 @@
     }
 </style>
 
-<body class="min-h-screen scroll backgroundImg dark:text-slate-300 text-slate-900">
+<body class="min-h-screen scroll backgroundImg text-slate-300">
 <div class="min-h-screen foregroundImg">
     <Navbar/>
     <div class="flex flex-col items-center pt-20">
