@@ -99,6 +99,15 @@
         house. But I just want a place to work where I'm comfortable and happy.
     </p>
     <br/>
+    <h3 class="font-bold">What are your plans for the future?</h3>
+    <p>I plan on founding a team to work on my passion project and Minecraft creations. Over the years I have managed to work
+        together with multiple bright minds. My qualities as an artist have been requested during my three year absence
+        where I attended university. My mods have equally had some updates from fans or people I work closely with, but
+        my library of mods is expanding and so is the work accompanying these responsibilities.
+        The ultimate goal is therefor creating a team of people as passionate as me so we can expand our frontiers and
+        provide creative fun for the next generation of players as well as solutions to problems we haven't found yet.
+    </p>
+    <br/>
     <h3 class="font-bold">Did you study anything to become the awesome person you are today?</h3>
     <p>Don't flatter me! No I didn't for a long time. Mainly self thought with a curiosity drive for the next
         step. Starting 2021 I did take up studies to try and get a bachelor degree in software development as a full
