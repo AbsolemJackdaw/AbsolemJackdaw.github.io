@@ -24,13 +24,13 @@
     }
 </style>
 
-<body class="min-h-screen scroll backgroundImg text-slate-300">
-<div class="min-h-screen mountainImg">
-<div class="min-h-screen foregroundImg">
-        <Navbar/>
-        <div class="flex flex-col items-center pt-20">
-            <slot/>
+<div class="min-h-screen scroll backgroundImg text-slate-300">
+    <div class="min-h-screen mountainImg">
+        <div class="min-h-screen foregroundImg">
+            <Navbar/>
+            <main id="main" class="flex flex-col items-center scroll-pt-40">
+                <slot/>
+            </main>
         </div>
     </div>
 </div>
-</body>

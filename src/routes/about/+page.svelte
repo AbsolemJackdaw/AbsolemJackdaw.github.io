@@ -3,9 +3,13 @@
     import {mediaCardRegistry} from "../../component/cardRegistry";
 </script>
 
+<svelte:head>
+    <title>SubHaven - About</title> 
+</svelte:head>
+
 <div class="my-10 py-10 px-5 flex flex-col xl:mx-[25%] mx-16 md:mx-32 backdrop-blur-sm rounded-2xl bg-[#000000aa] font-mono">
-    <div class="font-bold text-2xl text-center pb-5 border-b-2 border-pink-400 text-teal-400 mb-8">Welcome</div>
-    <p class="font-bold text-teal-300">My name is Absolem Jackdaw.</p>
+    <h1 class="font-bold text-2xl text-center pb-5 border-b-2 border-pink-400 text-teal-400 mb-8">Welcome</h1>
+    <h2 class="font-bold text-teal-300">My name is Absolem Jackdaw.</h2>
     <br/>
     If you were to look up my actual name, you would find nothing of interest.
     <p>Google Absolem Jackdaw, however, and you will find all of my achievements on multiple pages.</p>
@@ -83,23 +87,23 @@
     </p>
     <br/>
     <hr class="h-px my-8 border-1 border-cyan-400 mx-10">
-    <h3 class="font-bold">What are your plans for the future?</h3>
+    <h2 class="font-bold">What are your plans for the future?</h2>
     <p>I want to continue creating, preferably with Minecraft as a means, and gather people with the same vision to
         start a
         programming band. Preferably let it be a means for me to survive and/or live.
     </p>
     <br/>
-    <h3 class="font-bold">Will you ever drop modding?</h3>
+    <h2 class="font-bold">Will you ever drop modding?</h2>
     <p>I have had multiple opportunities to stop. I will not. It keeps pulling me back. I love the creation and I love
         the community.
     </p>
     <br/>
-    <h3 class="font-bold">Are you ever planning on becoming a well renowned programmer?</h3>
+    <h2 class="font-bold">Are you ever planning on becoming a well renowned programmer?</h2>
     <p>I have no ambition of career. I just want to be able to pay rent and if Odin allows me to, one day buy a
         house. But I just want a place to work where I'm comfortable and happy.
     </p>
     <br/>
-    <h3 class="font-bold">What are your plans for the future?</h3>
+    <h2 class="font-bold">What are your plans for the future?</h2>
     <p>I plan on founding a team to work on my passion project and Minecraft creations. Over the years I have managed to work
         together with multiple bright minds. My qualities as an artist have been requested during my three year absence
         where I attended university. My mods have equally had some updates from fans or people I work closely with, but
@@ -108,7 +112,7 @@
         provide creative fun for the next generation of players as well as solutions to problems we haven't found yet.
     </p>
     <br/>
-    <h3 class="font-bold">Did you study anything to become the awesome person you are today?</h3>
+    <h2 class="font-bold">Did you study anything to become the awesome person you are today?</h2>
     <p>Don't flatter me! No I didn't for a long time. Mainly self thought with a curiosity drive for the next
         step. Starting 2021 I did take up studies to try and get a bachelor degree in software development as a full
         stack dev at the PXL University at Hasselt.
@@ -119,7 +123,7 @@
     </p>
     <br/>
     <hr class="h-px my-8 border-1 border-cyan-400 mx-10">
-    <p class="font-bold text-xl">Why Minecraft?</p>
+    <h2 class="font-bold text-xl">Why Minecraft?</h2>
     <p>Back when I was a teenager, Minecraft was released and I got to discover it around 2011 when one of my friends
         was playing it on his laptop. I was intrigued.
     </p>
@@ -145,7 +149,7 @@
     <p>Minecraft however was a blank canvas. The art style is accessible, simple and square, and the worlds the game
         creates are the very definition of a sandbox. There is nothing that defines a century or culture the game might
         be set in. With the help some youtube tutorials made by <a class="underline underline-offset-2"
-                                                                   href="https://www.youtube.com/watch?v=L3FJnUZXUO8&list=PLB1D8D9B290C09EAB">x2Robbie2x</a>,
+                                                                   href="https://www.youtube.com/watch?v=L3FJnUZXUO8&list=PLB1D8D9B290C09EAB" target="_blank">x2Robbie2x</a>,
         I was able to
         let my creativity flow freely. My creativity is what has always primed in my mods, and will be the only drive
         that justifies my mods. This mindset also defines the way I create my mods. I will always create mods out of
